@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0px auto;
+        }
+
+        ul.list-product {
+            list-style: none;
+            padding: 0;
+            flex-wrap: wrap;
+            text-align: center;
+            display: flex
+        }
+
+        ul.list-product .li {
+            flex-basis: calc(100% / 3);
+            padding: 30px 0px;
+            border: 1px solid violet;
+            padding-left: 15px;
+            padding-right: 15px;
+
+
+
+        }
+
+
+        ul.list-product li .product-item {
+            border: 1px solid #080808;
+        }
+
+        .prince {
+            color: red;
+
+        }
+
+        .product-name {
+            display: block;
+
+            color: rgb(19, 17, 17);
+        }
+
+        .box2 {
+            position: absolute;
+            top: 81px;
+            left: 516px;
+
+        }
+
+        .product-name,
+        .buy-now {
+            text-decoration: none;
+        }
+
+        .buy-now {
+            color: orange;
+        }
+
+        .buy {
+            position: absolute;
+            background-color: orange;
+            width: 331px;
+            bottom: -20px;
+            height: 20px;
+            
+
+
+        }
+
+        .hidden {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hidden:hover .buy {
+            bottom: 1px;
+            transition: all 0.5s;
+        }
+        
+    </style>
+
+    <div class="container">
+        <h1 class="text-center text-uppercase">Danh sách bán hàng </h1>
+        <ul class="list-product">
+            <li class="hidden">
+                <div class="product-item ">
+                    <a href="" class="box1">
+                        <img src="pic/product1.jpg" alt="">
+                    </a>
+                    <div class="prince">500.000đ</div><br>
+                    <a href="" class="product-name">Mô tả:Thích hợp để đi ngoài trời</a>
+                    <a href="" class="buy-now">Mua ngay</a>
+                </div>
+                <div class="buy">mua ngay</div>
+
+            </li>
+            <span class="discount box2">
+                <img src="pic/sale.png" alt="">
+            </span>
+        </ul>
+    </div>
+
+</body>
+
+</html>
